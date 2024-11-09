@@ -1,0 +1,67 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "smartsheet.winapp/1.0.0": {
+        "dependencies": {
+          "smartsheet.business": "1.0.0",
+          "smartsheet.data": "1.0.0",
+          "smartsheet.entities": "1.0.0"
+        },
+        "runtime": {
+          "smartsheet.winapp.dll": {}
+        }
+      },
+      "smartsheet.business/1.0.0": {
+        "runtime": {
+          "smartsheet.business.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "smartsheet.data/1.0.0": {
+        "runtime": {
+          "smartsheet.data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "smartsheet.entities/1.0.0": {
+        "runtime": {
+          "smartsheet.entities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "smartsheet.winapp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "smartsheet.business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "smartsheet.data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "smartsheet.entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

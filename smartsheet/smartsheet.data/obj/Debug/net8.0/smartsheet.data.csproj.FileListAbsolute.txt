@@ -1,0 +1,11 @@
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\bin\Debug\net8.0\smartsheet.data.deps.json
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\bin\Debug\net8.0\smartsheet.data.dll
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\bin\Debug\net8.0\smartsheet.data.pdb
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\obj\Debug\net8.0\smartsheet.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\obj\Debug\net8.0\smartsheet.data.AssemblyInfoInputs.cache
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\obj\Debug\net8.0\smartsheet.data.AssemblyInfo.cs
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\obj\Debug\net8.0\smartsheet.data.csproj.CoreCompileInputs.cache
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\obj\Debug\net8.0\smartsheet.data.dll
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\obj\Debug\net8.0\refint\smartsheet.data.dll
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\obj\Debug\net8.0\smartsheet.data.pdb
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.data\obj\Debug\net8.0\ref\smartsheet.data.dll

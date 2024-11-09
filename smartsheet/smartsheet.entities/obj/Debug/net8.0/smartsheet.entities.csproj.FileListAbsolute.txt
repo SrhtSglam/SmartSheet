@@ -1,0 +1,11 @@
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\bin\Debug\net8.0\smartsheet.entities.deps.json
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\bin\Debug\net8.0\smartsheet.entities.dll
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\bin\Debug\net8.0\smartsheet.entities.pdb
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\obj\Debug\net8.0\smartsheet.entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\obj\Debug\net8.0\smartsheet.entities.AssemblyInfoInputs.cache
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\obj\Debug\net8.0\smartsheet.entities.AssemblyInfo.cs
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\obj\Debug\net8.0\smartsheet.entities.csproj.CoreCompileInputs.cache
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\obj\Debug\net8.0\smartsheet.entities.dll
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\obj\Debug\net8.0\refint\smartsheet.entities.dll
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\obj\Debug\net8.0\smartsheet.entities.pdb
+C:\Users\stj067\Documents\GitHub\SmartSheet\smartsheet\smartsheet.entities\obj\Debug\net8.0\ref\smartsheet.entities.dll
