@@ -1,3 +1,5 @@
+using smartsheet;
+
 namespace WinFormsApp1
 {
     public partial class Menu : Form
@@ -7,9 +9,12 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
+        AppDbContext context;
+
         private void Menu_Load(object sender, EventArgs e)
         {
-
+            if (context == null)
+                context = new AppDbContext();
         }
 
         public void FormLoad(object Form)
