@@ -41,9 +41,10 @@
             btnCustomers = new Button();
             btnSales = new Button();
             pnlTop = new Panel();
+            btnFullscreen = new Button();
+            btnMinimizedScreen = new Button();
             button1 = new Button();
             pnlBody = new Panel();
-            btnScreen = new Button();
             pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
             pnlTop.SuspendLayout();
@@ -220,7 +221,8 @@
             // pnlTop
             // 
             pnlTop.BackColor = Color.Gray;
-            pnlTop.Controls.Add(btnScreen);
+            pnlTop.Controls.Add(btnFullscreen);
+            pnlTop.Controls.Add(btnMinimizedScreen);
             pnlTop.Controls.Add(button1);
             pnlTop.Dock = DockStyle.Top;
             pnlTop.Location = new Point(0, 0);
@@ -228,8 +230,41 @@
             pnlTop.Size = new Size(1280, 70);
             pnlTop.TabIndex = 1;
             // 
+            // btnFullscreen
+            // 
+            btnFullscreen.Anchor = AnchorStyles.Right;
+            btnFullscreen.BackColor = Color.Gray;
+            btnFullscreen.FlatAppearance.BorderSize = 0;
+            btnFullscreen.FlatStyle = FlatStyle.Flat;
+            btnFullscreen.ForeColor = Color.White;
+            btnFullscreen.ImageAlign = ContentAlignment.MiddleLeft;
+            btnFullscreen.Location = new Point(1158, 12);
+            btnFullscreen.Name = "btnFullscreen";
+            btnFullscreen.Size = new Size(52, 52);
+            btnFullscreen.TabIndex = 11;
+            btnFullscreen.Text = "⛶";
+            btnFullscreen.UseVisualStyleBackColor = false;
+            btnFullscreen.Click += btnFullscreen_Click;
+            // 
+            // btnMinimizedScreen
+            // 
+            btnMinimizedScreen.Anchor = AnchorStyles.Right;
+            btnMinimizedScreen.BackColor = Color.Gray;
+            btnMinimizedScreen.FlatAppearance.BorderSize = 0;
+            btnMinimizedScreen.FlatStyle = FlatStyle.Flat;
+            btnMinimizedScreen.ForeColor = Color.White;
+            btnMinimizedScreen.ImageAlign = ContentAlignment.MiddleLeft;
+            btnMinimizedScreen.Location = new Point(1100, 12);
+            btnMinimizedScreen.Name = "btnMinimizedScreen";
+            btnMinimizedScreen.Size = new Size(52, 52);
+            btnMinimizedScreen.TabIndex = 10;
+            btnMinimizedScreen.Text = "—";
+            btnMinimizedScreen.UseVisualStyleBackColor = false;
+            btnMinimizedScreen.Click += btnMinimizedScreen_Click;
+            // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Right;
             button1.BackColor = Color.Gray;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
@@ -250,21 +285,6 @@
             pnlBody.Name = "pnlBody";
             pnlBody.Size = new Size(980, 650);
             pnlBody.TabIndex = 2;
-            // 
-            // btnScreen
-            // 
-            btnScreen.BackColor = Color.Gray;
-            btnScreen.FlatAppearance.BorderSize = 0;
-            btnScreen.FlatStyle = FlatStyle.Flat;
-            btnScreen.ForeColor = Color.White;
-            btnScreen.ImageAlign = ContentAlignment.MiddleLeft;
-            btnScreen.Location = new Point(1158, 12);
-            btnScreen.Name = "btnScreen";
-            btnScreen.Size = new Size(52, 52);
-            btnScreen.TabIndex = 10;
-            btnScreen.Text = "—";
-            btnScreen.UseVisualStyleBackColor = false;
-            btnScreen.Click += btnScreen_Click;
             // 
             // Menu
             // 
@@ -306,6 +326,7 @@
         private Button btnSettings;
         private PictureBox pcbLogo;
         private Button button1;
-        private Button btnScreen;
+        private Button btnMinimizedScreen;
+        private Button btnFullscreen;
     }
 }

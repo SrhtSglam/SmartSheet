@@ -84,9 +84,17 @@ namespace smartsheet
 
         }
 
-        private void btnScreen_Click(object sender, EventArgs e)
+        private void btnMinimizedScreen_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnFullscreen_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else if (this.WindowState == FormWindowState.Maximized)
+                this.WindowState = FormWindowState.Normal;
         }
     }
 }

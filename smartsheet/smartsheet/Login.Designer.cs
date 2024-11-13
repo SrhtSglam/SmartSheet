@@ -38,6 +38,7 @@
             // 
             // txtUsername
             // 
+            txtUsername.Anchor = AnchorStyles.None;
             txtUsername.Location = new Point(338, 184);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(302, 34);
@@ -45,6 +46,7 @@
             // 
             // txtPassword
             // 
+            txtPassword.Anchor = AnchorStyles.None;
             txtPassword.Location = new Point(338, 289);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(302, 34);
@@ -52,6 +54,7 @@
             // 
             // lblUsername
             // 
+            lblUsername.Anchor = AnchorStyles.None;
             lblUsername.AutoSize = true;
             lblUsername.Location = new Point(338, 153);
             lblUsername.Name = "lblUsername";
@@ -61,6 +64,7 @@
             // 
             // lblPassword
             // 
+            lblPassword.Anchor = AnchorStyles.None;
             lblPassword.AutoSize = true;
             lblPassword.Location = new Point(338, 258);
             lblPassword.Name = "lblPassword";
@@ -70,6 +74,7 @@
             // 
             // btnLogin
             // 
+            btnLogin.Anchor = AnchorStyles.None;
             btnLogin.Location = new Point(423, 351);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(131, 49);
@@ -80,6 +85,7 @@
             // 
             // lblError
             // 
+            lblError.Anchor = AnchorStyles.None;
             lblError.AutoSize = true;
             lblError.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             lblError.ForeColor = Color.Red;
