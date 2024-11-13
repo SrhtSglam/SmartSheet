@@ -4,7 +4,6 @@ namespace smartsheet
 {
     public partial class Menu : Form
     {
-        public bool IsLogin;
 
         public Menu()
         {
@@ -17,8 +16,7 @@ namespace smartsheet
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            if (IsLogin == false)
-                FormLoad(new Login(context));
+            IsAuthSide();
         }
 
         public void FormLoad(object Form)
@@ -95,6 +93,38 @@ namespace smartsheet
                 this.WindowState = FormWindowState.Maximized;
             else if (this.WindowState == FormWindowState.Maximized)
                 this.WindowState = FormWindowState.Normal;
+        }
+
+        private void IsAuthSide()
+        {
+            if (Auth.IsAuth == true)
+            {
+                this.btnCustomers.Enabled = true;
+                this.btnDashboard.Enabled = true;
+                this.btnDataprocess.Enabled = true;
+                this.btnHelp.Enabled = true;
+                this.btnReports.Enabled = true;
+                this.btnSales.Enabled = true;
+                this.btnSettings.Enabled = true;
+                this.btnStock.Enabled = true;
+            }
+            else
+            {
+                this.btnCustomers.Enabled = false;
+                this.btnDashboard.Enabled = false;
+                this.btnDataprocess.Enabled = false;
+                this.btnHelp.Enabled = false;
+                this.btnReports.Enabled = false;
+                this.btnSales.Enabled = false;
+                this.btnSettings.Enabled = false;
+                this.btnStock.Enabled = false;
+                FormLoad(new Login(context));
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            IsAuthSide();
         }
     }
 }

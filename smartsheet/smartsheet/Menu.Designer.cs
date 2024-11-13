@@ -45,6 +45,7 @@
             btnMinimizedScreen = new Button();
             button1 = new Button();
             pnlBody = new Panel();
+            btnRefresh = new Button();
             pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
             pnlTop.SuspendLayout();
@@ -221,6 +222,7 @@
             // pnlTop
             // 
             pnlTop.BackColor = Color.Gray;
+            pnlTop.Controls.Add(btnRefresh);
             pnlTop.Controls.Add(btnFullscreen);
             pnlTop.Controls.Add(btnMinimizedScreen);
             pnlTop.Controls.Add(button1);
@@ -286,6 +288,22 @@
             pnlBody.Size = new Size(980, 650);
             pnlBody.TabIndex = 2;
             // 
+            // btnRefresh
+            // 
+            btnRefresh.Anchor = AnchorStyles.Right;
+            btnRefresh.BackColor = Color.Gray;
+            btnRefresh.FlatAppearance.BorderSize = 0;
+            btnRefresh.FlatStyle = FlatStyle.Flat;
+            btnRefresh.ForeColor = Color.White;
+            btnRefresh.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRefresh.Location = new Point(1042, 12);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(52, 52);
+            btnRefresh.TabIndex = 12;
+            btnRefresh.Text = "⟳";
+            btnRefresh.UseVisualStyleBackColor = false;
+            btnRefresh.Click += btnRefresh_Click;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
@@ -328,5 +346,6 @@
         private Button button1;
         private Button btnMinimizedScreen;
         private Button btnFullscreen;
+        private Button btnRefresh;
     }
 }

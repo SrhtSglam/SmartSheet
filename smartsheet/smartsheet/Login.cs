@@ -39,6 +39,7 @@ namespace smartsheet
                 else if (item.Username == txtUsername.Text && item.Password == txtPassword.Text)
                 {
                     lblError.Text = loginMessages[2];
+                    Auth.IsAuth = true;
                     this.Close();
                 }
                 else
