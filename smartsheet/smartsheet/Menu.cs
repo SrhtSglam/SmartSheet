@@ -4,9 +4,13 @@ namespace WinFormsApp1
 {
     public partial class Menu : Form
     {
+        public bool IsLogin;
+
         public Menu()
         {
             InitializeComponent();
+            if (IsLogin == false)
+                FormLoad(new Login());
         }
 
         AppDbContext context;

@@ -2,11 +2,10 @@
 {
     public class Users
     {
-        public int Id { get; set; }
-        public int Username { get; set; }
-        public int Password { get; set; }
-        public int Email { get; set; }
-        public int FirstName { get; set; }
-        public int LastName { get; set; }
+        public int UserId { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public int RoleId { get; set; }
     }
 }
