@@ -33,6 +33,7 @@
             lblUsername = new Label();
             lblPassword = new Label();
             btnLogin = new Button();
+            lblError = new Label();
             SuspendLayout();
             // 
             // txtUsername
@@ -75,12 +76,25 @@
             btnLogin.TabIndex = 6;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // lblError
+            // 
+            lblError.AutoSize = true;
+            lblError.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            lblError.ForeColor = Color.Red;
+            lblError.Location = new Point(338, 67);
+            lblError.Name = "lblError";
+            lblError.Size = new Size(200, 28);
+            lblError.TabIndex = 7;
+            lblError.Text = "Error Code Message";
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(980, 650);
+            Controls.Add(lblError);
             Controls.Add(btnLogin);
             Controls.Add(lblPassword);
             Controls.Add(lblUsername);
@@ -88,7 +102,7 @@
             Controls.Add(txtUsername);
             Font = new Font("Segoe UI", 12F);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Login";
             Text = "Login";
             Load += Login_Load;
@@ -103,5 +117,6 @@
         private Label lblUsername;
         private Label lblPassword;
         private Button btnLogin;
+        private Label lblError;
     }
 }

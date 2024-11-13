@@ -1,7 +1,10 @@
-﻿namespace smartsheet
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace smartsheet
 {
     public class Reports
     {
+        [Key]
         public int ReportId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

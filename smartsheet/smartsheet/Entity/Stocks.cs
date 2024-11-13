@@ -1,7 +1,10 @@
-﻿namespace smartsheet
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace smartsheet
 {
     public class Stocks
     {
+        [Key]
         public int StockId { get; set; }
         public int ProductId { get; set; }
         public int SupplierId { get; set; }

@@ -1,6 +1,6 @@
 using smartsheet;
 
-namespace WinFormsApp1
+namespace smartsheet
 {
     public partial class Menu : Form
     {
@@ -8,17 +8,17 @@ namespace WinFormsApp1
 
         public Menu()
         {
+            if (context == null)
+                context = new AppDbContext();
             InitializeComponent();
-            if (IsLogin == false)
-                FormLoad(new Login());
         }
 
-        AppDbContext context;
+        private AppDbContext context;
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            if (context == null)
-                context = new AppDbContext();
+            if (IsLogin == false)
+                FormLoad(new Login(context));
         }
 
         public void FormLoad(object Form)
@@ -40,7 +40,7 @@ namespace WinFormsApp1
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            //FormLoad(new Dashboard);
+            //FormLoad(new Login());
         }
 
         private void btnStock_Click(object sender, EventArgs e)

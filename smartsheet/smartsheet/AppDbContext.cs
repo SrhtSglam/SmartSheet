@@ -28,5 +28,14 @@ namespace smartsheet
                 optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=smartsheetDb;User ID=sa;Password=Abc123+;Trusted_Connection=True;TrustServerCertificate=True;");
             }
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Categories>()
+                //.HasKey(c => c.CategoryId);  // Define the primary key here
+            modelBuilder.Entity<ProductCategory>().HasNoKey();
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

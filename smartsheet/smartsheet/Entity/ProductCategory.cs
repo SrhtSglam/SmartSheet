@@ -1,4 +1,6 @@
-﻿namespace smartsheet
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace smartsheet
 {
     public class ProductCategory
     {
