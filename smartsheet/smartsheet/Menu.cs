@@ -83,5 +83,10 @@ namespace smartsheet
             //FormLoad(new Help);
 
         }
+
+        private void btnScreen_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             pnlLeft = new Panel();
             btnHelp = new Button();
             lblBusinessName = new Label();
@@ -42,6 +43,7 @@
             pnlTop = new Panel();
             button1 = new Button();
             pnlBody = new Panel();
+            btnScreen = new Button();
             pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
             pnlTop.SuspendLayout();
@@ -72,7 +74,7 @@
             btnHelp.FlatAppearance.BorderSize = 0;
             btnHelp.FlatStyle = FlatStyle.Flat;
             btnHelp.ForeColor = Color.White;
-            btnHelp.Image = smartsheet.Properties.Resources.Help_Ico;
+            btnHelp.Image = Properties.Resources.Help_Ico;
             btnHelp.ImageAlign = ContentAlignment.MiddleLeft;
             btnHelp.Location = new Point(0, 504);
             btnHelp.Name = "btnHelp";
@@ -89,9 +91,9 @@
             lblBusinessName.ForeColor = Color.White;
             lblBusinessName.Location = new Point(82, 19);
             lblBusinessName.Name = "lblBusinessName";
-            lblBusinessName.Size = new Size(90, 37);
+            lblBusinessName.Size = new Size(148, 37);
             lblBusinessName.TabIndex = 8;
-            lblBusinessName.Text = "label1";
+            lblBusinessName.Text = "GlobalTech";
             // 
             // btnSettings
             // 
@@ -99,7 +101,7 @@
             btnSettings.FlatAppearance.BorderSize = 0;
             btnSettings.FlatStyle = FlatStyle.Flat;
             btnSettings.ForeColor = Color.White;
-            btnSettings.Image = smartsheet.Properties.Resources.Settings_Ico;
+            btnSettings.Image = Properties.Resources.Settings_Ico;
             btnSettings.ImageAlign = ContentAlignment.MiddleLeft;
             btnSettings.Location = new Point(0, 446);
             btnSettings.Name = "btnSettings";
@@ -111,9 +113,11 @@
             // 
             // pcbLogo
             // 
+            pcbLogo.Image = Properties.Resources.Logo;
             pcbLogo.Location = new Point(12, 6);
             pcbLogo.Name = "pcbLogo";
             pcbLogo.Size = new Size(64, 64);
+            pcbLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             pcbLogo.TabIndex = 8;
             pcbLogo.TabStop = false;
             // 
@@ -123,7 +127,7 @@
             btnDataprocess.FlatAppearance.BorderSize = 0;
             btnDataprocess.FlatStyle = FlatStyle.Flat;
             btnDataprocess.ForeColor = Color.White;
-            btnDataprocess.Image = smartsheet.Properties.Resources.DataExcel_Ico;
+            btnDataprocess.Image = Properties.Resources.DataExcel_Ico;
             btnDataprocess.ImageAlign = ContentAlignment.MiddleLeft;
             btnDataprocess.Location = new Point(0, 388);
             btnDataprocess.Name = "btnDataprocess";
@@ -139,7 +143,7 @@
             btnDashboard.FlatAppearance.BorderSize = 0;
             btnDashboard.FlatStyle = FlatStyle.Flat;
             btnDashboard.ForeColor = Color.White;
-            btnDashboard.Image = smartsheet.Properties.Resources.Desktop_Ico;
+            btnDashboard.Image = Properties.Resources.Desktop_Ico;
             btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
             btnDashboard.Location = new Point(0, 98);
             btnDashboard.Name = "btnDashboard";
@@ -155,7 +159,7 @@
             btnReports.FlatAppearance.BorderSize = 0;
             btnReports.FlatStyle = FlatStyle.Flat;
             btnReports.ForeColor = Color.White;
-            btnReports.Image = smartsheet.Properties.Resources.Repors_Ico;
+            btnReports.Image = Properties.Resources.Repors_Ico;
             btnReports.ImageAlign = ContentAlignment.MiddleLeft;
             btnReports.Location = new Point(0, 330);
             btnReports.Name = "btnReports";
@@ -171,7 +175,7 @@
             btnStock.FlatAppearance.BorderSize = 0;
             btnStock.FlatStyle = FlatStyle.Flat;
             btnStock.ForeColor = Color.White;
-            btnStock.Image = smartsheet.Properties.Resources.Stock_Ico;
+            btnStock.Image = Properties.Resources.Stock_Ico;
             btnStock.ImageAlign = ContentAlignment.MiddleLeft;
             btnStock.Location = new Point(0, 156);
             btnStock.Name = "btnStock";
@@ -187,7 +191,7 @@
             btnCustomers.FlatAppearance.BorderSize = 0;
             btnCustomers.FlatStyle = FlatStyle.Flat;
             btnCustomers.ForeColor = Color.White;
-            btnCustomers.Image = smartsheet.Properties.Resources.Customers_Ico;
+            btnCustomers.Image = Properties.Resources.Customers_Ico;
             btnCustomers.ImageAlign = ContentAlignment.MiddleLeft;
             btnCustomers.Location = new Point(0, 272);
             btnCustomers.Name = "btnCustomers";
@@ -203,7 +207,7 @@
             btnSales.FlatAppearance.BorderSize = 0;
             btnSales.FlatStyle = FlatStyle.Flat;
             btnSales.ForeColor = Color.White;
-            btnSales.Image = smartsheet.Properties.Resources.Sales_Ico;
+            btnSales.Image = Properties.Resources.Sales_Ico;
             btnSales.ImageAlign = ContentAlignment.MiddleLeft;
             btnSales.Location = new Point(0, 214);
             btnSales.Name = "btnSales";
@@ -216,6 +220,7 @@
             // pnlTop
             // 
             pnlTop.BackColor = Color.Gray;
+            pnlTop.Controls.Add(btnScreen);
             pnlTop.Controls.Add(button1);
             pnlTop.Dock = DockStyle.Top;
             pnlTop.Location = new Point(0, 0);
@@ -246,6 +251,21 @@
             pnlBody.Size = new Size(980, 650);
             pnlBody.TabIndex = 2;
             // 
+            // btnScreen
+            // 
+            btnScreen.BackColor = Color.Gray;
+            btnScreen.FlatAppearance.BorderSize = 0;
+            btnScreen.FlatStyle = FlatStyle.Flat;
+            btnScreen.ForeColor = Color.White;
+            btnScreen.ImageAlign = ContentAlignment.MiddleLeft;
+            btnScreen.Location = new Point(1158, 12);
+            btnScreen.Name = "btnScreen";
+            btnScreen.Size = new Size(52, 52);
+            btnScreen.TabIndex = 10;
+            btnScreen.Text = "—";
+            btnScreen.UseVisualStyleBackColor = false;
+            btnScreen.Click += btnScreen_Click;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
@@ -257,8 +277,10 @@
             Controls.Add(pnlTop);
             Font = new Font("Segoe UI", 12F);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             Name = "Menu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Menu_Load;
             pnlLeft.ResumeLayout(false);
@@ -284,5 +306,6 @@
         private Button btnSettings;
         private PictureBox pcbLogo;
         private Button button1;
+        private Button btnScreen;
     }
 }
